@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>个人信息</title>
+		<script src="./js/jquery-2.2.3.min.js"></script>
+		<style type="text/css">
+	
+
+			.header{
+				height: 40px;
+				width: 1500px;
+				font: 12px Tahoma,Helvetica,Arial,'STXinwei',sans-serif;
+				color:white;
+				background-color: #FF4400;
+				padding: 12px 0px;
+				z-index: 5;
+			}
+			.tj-logo{
+				width: 140px;
+				height: 36px;
+				display: inline-block;
+				margin-left: 150px;
+				float: left;
+			}
+			.selected{
+				width: 500px;
+				height: 36px;
+
+				float: left;
+				padding-left: 100px;
+				font-family:"微软雅黑"; 
+				font-size: 16PX;
+
+			}
+			.zhxl li{
+				background-color:white;
+			}
+			.selscted ul li ul{
+				background: white;
+			}
+			.header ul{
+				margin: 0px; padding: 0px;
+			}
+			.header ul li{
+				height: 36px; width: 150px;
+				list-style: none; float: left;
+				display: inline;
+				text-decoration: none;
+			}
+			.header ul li a{
+				text-decoration: none;display: block;
+				line-height: 36px; /*border-right: 1px solid blue;*/
+				
+			}
+			.header ul li a:hover{
+				color:black;
+				border-bottom: 1px dashed #ff0000;
+			}
+			.header ul li ul{
+				visibility: hidden;}
+			.header ul li:hover ul{
+				visibility: visible;}
+			.header ul li ul a:hover{
+				color: blueviolet;}
+				
+			.search{
+				width: 380px;
+				padding-left: 80px;
+				float: left;
+				font-family: 'Microsoft YaHei';}
+			input{
+				width: 300px; height: 30px;
+				border: 1px solid white;
+				float: left;}
+			.middle{
+				height: 1180px;width: 1200px;
+				margin-left: 150px;
+			}
+			.middle ul li{
+				text-decoration: none;
+			}
+			.m1{
+				width: 160px;
+				height: 1180px;
+				float: left;
+			}
+			.m1 ul{
+				list-style: none;
+			}
+			.m1 ul li ul{
+				visibility: hidden;
+				display: inline;
+				
+			}
+			.middle ul a{
+				text-decoration: none;
+			}
+			.m1 ul li:hover ul{visibility: visible;}
+			.m2{
+				width: 660px;
+				height: 200px;
+				float: left;
+				position: relative;
+				z-index: -1;
+			}
+			.m3{
+				width: 350px;
+				height: 400px;
+				float: left;
+				margin-left: 25px;
+			}
+			table{
+				text-align: center;
+			}
+			body{
+				font:16px "楷体";
+				
+			}
+
+			.cd{
+		    	display: none;
+		    }
+		    h4{
+		    	background-color: #FAEBD7;  
+		    	cursor: pointer;
+		    	color: #000;
+		    	text-align: center;
+		    }
+		    h4:hover{
+		    	color:#fff;
+		    }
+		   a {text-decoration: none}
+
+		</style>
+	</head>
+	<body>
+		<img src="图片/jinbi.png" width="150px" height="70px"/>
+		<div class="header">
+			<div class="tj-logo">
+				<span style="font-size: 35px;">我的淘金</span>
+			</div>
+			<div class="selected">
+				<ul>
+					<li style="color: white; font-size: 17px;"><a href="#">首页</a></li>
+					<li style="color: white; font-size: 17px;"><a href="#">账户设置▽</a>
+
+						<div >
+						<ul class="zhxl" >
+							<li style="color: green; font-size: 20px;">安全设置</li>
+							<li style="color: white;"><a href="#">修改登陆密码</a></li>
+							<li  style="color: white;"><a href="#">手机绑定</a></li>
+							<li><a href="#">密码问题设置</a></li>
+							<li><a href="#">其他</a></li>
+							</li>
+							<li style="color: red; font-size: 20px;">个人资料</li>
+								<li><a href="address/address.php">收货地址</a></li>
+								<li><a href="#">修改头像、昵称</a></li>
+								<li><a href="#">消息提醒</a></li>
+							</li>
+							<li style="color: blue; font-size: 20px;">账号绑定</li>
+								<li><a href="#">支付宝绑定</a></li>
+								<li><a href="#">微信绑定</a></li>
+								<li><a href="#">分享绑定</a></li>
+							</li>
+						</ul>
+					    </div>
+					</li>
+					<li style="color: white;font-size: 17px;"><a href="#">消息</a></li>
+				</ul>
+			</div>
+			<div class="search">
+				<input type="text" name="search" placeholder="请输入关键字">
+				<button style="color: white; background-color: orange; width: 50px; height: 35px; cursor: pointer;">搜索</button>
+			</div>
+		</div>
+		<div class="middle">
+			<div class="m1">
+<!-- 				<ul>
+					<li>全部功能</li>
+					<li><a href="shopcar.html">我的购物车</a></li>
+					<li><a href="#">已买到的宝贝  ▽</a>
+						<ul>
+							<li>我的拍卖</li>
+							<li>机票酒店保险</li>
+							<li>我的彩票</li>
+							<li>我的1688订单</li>
+							<li>官方集运</li>
+						</ul>
+					</li>
+					<li><a href="#">购买过的店铺</a></li>
+					<li><a href="#">我的发票  ▽</a>
+						<ul>
+							<li>开票信息</li>
+							<li>发票管理</li>
+						</ul>
+					</li>
+					<li><a href="#">我的收藏</a></li>
+					<li><a href="#">我的积分</a></li>
+					<li><a href="#">我的优惠信息</a></li>
+					<li><a href="#">评价管理</a></li>
+					<li><a href="#">退款维权  ▽</a>
+						<ul>
+							<li>退款管理</li>
+							<li>投诉管理</li>
+							<li>举报管理</li>	
+						</ul>
+					</li>
+					<li><a href="#">我的足迹</a></li>
+					<li><a href="#">流量钱包</a></li>
+				</ul>
+			</div> -->
+
+			<h4>全部功能</h4>
+			<h4><a href="shopcar.php">我的购物车</a></h4>
+			<h4 class='xl'>已买到的宝贝 ▽</h4>
+			<div class="cd">
+				<p><a href="www.baidu.com">我的拍卖</a></p>
+				<p><a href="www.baidu.com">机票酒店保险</a></p>
+				<p><a href="www.baidu.com">我的彩票</a></p>
+				<p><a href="www.baidu.com">我的1688订单</a></p>
+			</div>
+			<h4><a href="#">购买过的店铺</a></h4>
+			<h4 class='xl'>我的发票 ▽</h4>
+			<div class="cd">
+				<p><a href="www.baidu.com">开票信息</a></p>
+				<p><a href="www.baidu.com">发票管理</a></p>
+			</div>
+			<h4><a href="www.baidu.com">我的收藏</a></h4>
+			<h4><a href="www.baidu.com">我的积分</a></h4>
+			<h4><a href="www.baidu.com">我的优惠</a></h4>
+			<h4 class='xl'>退款维权 ▽</h4>
+			<div class="cd">
+			    <p><a href="www.baidu.com">退款管理</a></p>
+			    <p><a href="www.baidu.com">投诉管理</a></p>
+			    <p><a href="www.baidu.com">举报管理</a></p>
+		     </div>
+		     <h4><a href="www.baidu.com"我的足迹</a></h4>
+		     <h4><a href="www.baidu.com"流量钱包</a></h4>
+		     <h4><a href="order/orderlook.php">我的订单</a></h4>
+		     <h4 class="xl">评价管理 ▽</h4>
+		     <div class="cd">
+			    <p><a href="comment/commentIndex.php">我的评价</a></p>
+			    <p><a href="comment/add.php">添加评价</a></p>
+		     </div>
+
+		 </div>
+
+
+			<div class="m2">
+				<!-- <table border="1px"width="660px"height="200px">
+					<tr>
+						<td colspan="2"><img src="图片/getAvatar.jpg"><span>姜汤吖</span></td>
+						<td>我的收货地址</td>
+						<td>我的优惠信息▽</td>
+						<td>我的支付宝</td>
+					</tr>
+					<tr>
+						<td>待付款</td>
+						<td>待发货</td>
+						<td>待收货</td>
+						<td>待评价</td>
+						<td>退款</td>
+					</tr>
+					<tr>
+						<td>待付款</td>
+						<td>待发货</td>
+						<td>待收货</td>
+						<td>待评价</td>
+						<td>退款</td>
+					</tr>
+					<tr>
+						<td>待付款</td>
+						<td>待发货</td>
+						<td>待收货</td>
+						<td>待评价</td>
+						<td>退款</td>
+					</tr>
+					<tr>
+						<td>待付款</td>
+						<td>待发货</td>
+						<td>待收货</td>
+						<td>待评价</td>
+						<td>退款</td>
+					</tr>
+					<tr>
+						<td>待付款</td>
+						<td>待发货</td>
+						<td>待收货</td>
+						<td>待评价</td>
+						<td>退款</td>
+					</tr>
+				</table> -->
+			</div>
+			<div class="m3">
+				<table border="0" cellspacing="" cellpadding=""width="355px"height="300px">
+					<tr><th colspan="4" bgcolor=chocolate><span style="color: white; font-size: 20px;">便民服务</span></th></tr>
+					<tr>
+						<td> <a href="https:\\www.baidu.com"><img src="图片/手机.png" width="81px" height="80px"></a></td>
+						<td> <a href="https:\\www.baidu.com"><img src="图片/点卡.png" width="81px" height="80px"></a></td>
+						<td> <a href="https:\\www.baidu.com"><img src="图片/机票.png" width="81px" height="80px"></a></td>
+						<td> <a href="https:\\www.baidu.com"><img src="图片/彩票.png" width="81px" height="80px"></a></td>
+					</tr>
+					<tr>
+						<td> <a href="https:\\www.baidu.com"><img src="图片/水电煤.png" width="81px" height="80px"></a></td>
+						<td> <a href="https:\\www.baidu.com"><img src="图片/保险.png" width="81px" height="80px"></a></td>
+						<td> <a href="https:\\www.baidu.com"><img src="图片/转账.png" width="81px" height="80px"></a></td>
+						<td> <a href="https:\\www.baidu.com"><img src="图片/还款.png" width="81px" height="80px"></a></td>
+					</tr>
+					<tr>
+						<td> <a href="https:\\www.baidu.com"><img src="图片/外卖.png" width="81px" height="80px"></a></td>
+						<td> <a href="https:\\www.baidu.com"><img src="图片/酒店.png" width="81px" height="80px"></a></td>
+						<td> <a href="https:\\www.baidu.com"><img src="图片/快递.png" width="81px" height="80px"></a></td>
+						<td> <a href="https:\\www.baidu.com"><img src="图片/火车票.png" width="81px" height="80px"></a></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</body>
+</html>
+<script>
+	$(".xl").click(function() {
+		$(this).next().toggle();
+		$('.cd').not($(this).next()).hide();
+	});
+</script>

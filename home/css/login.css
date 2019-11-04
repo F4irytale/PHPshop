@@ -1,0 +1,40 @@
+
+.title img{
+	float: left;
+	width: 100px;
+	height: 60px;
+	margin-left: 80px;
+	
+}
+.form{
+	width: 341px;
+	height: 200px;
+	margin-left: 1000px;
+	margin-top: 130px;
+	float: none;
+
+}
+.tooltip-inner{
+    background-color: #0e8ee7;
+}
+.tooltip.right .tooltip-arrow{
+    border-right-color: #0e8ee7;
+}
+.right_png{
+	width: 980px;
+	height: 400px;
+	float: left;
+}
+.bottom{
+	margin-top: 200px;
+}
+.foot{
+	/*background-color: blue;*/
+	width: 1300px;
+	height:100px;
+	margin-left: 50px;
+}
+.btn a{
+	text-decoration: none;
+	color: white;
+}

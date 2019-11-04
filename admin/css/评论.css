@@ -1,0 +1,24 @@
+
+.a1 {
+	border:1px #000 solid;
+	width:120px;
+	height:100px;
+	margin-top: 10px;
+	border-top: 0px;
+	border-right: 0px;
+    float: left;
+}
+.a2{
+	border:1px #000 solid;
+	width:520px;
+	height:100px;
+	margin-top: 10px;
+	border-top: 0px;
+	border-left: 0px;
+    float: left;
+}
+
+.head{
+	width:650px;
+	height:600px	
+}

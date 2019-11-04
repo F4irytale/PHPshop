@@ -1,0 +1,52 @@
+#header{
+	width: 1210px;
+	height: 100px;
+	background: #013824;
+	border: 1px solid #333333;
+	float: left;
+}
+#logo{
+	width:1200px;
+	height: 20px; 
+      float: left;
+}
+table{
+	width:100%;
+	border: 1px solid #018524;
+	border-collapse: collapse;
+}
+tr,td{
+	height: 50px;
+	text-align: center;
+	border: 1px solid #018524;
+}
+#left{
+	margin: 0px;
+	padding: 0px;
+    width: 1000px;
+    height: 100px;
+    float: left;
+}
+#right li{
+	float: left;
+} 
+#nav{
+	padding-top: 100px;
+	margin-bottom:100px;
+	text-align: left; 
+}
+#nav table{
+	width:100%;
+	border: 1px solid #018524;
+	border-collapse: collapse;
+}
+#nav tr,td{
+	height: 50px;
+	text-align: center;
+	border: 1px solid #018524;
+}
+#footer{
+	padding-top: 100px;
+	margin-bottom:340px; 
+	text-align: center;
+}

@@ -1,0 +1,104 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+
+body {
+	height: 100%;
+	background: #fff url(../img/bg.jpg) 50% 50% no-repeat;
+	background-size: cover;
+}
+
+.dowebok {
+	position: absolute;/*生成绝对定位的元素*/
+	left: 50%; /*设置以包含元素的百分比计的左边位置*/
+	top: 50%;
+	width: 430px;
+	height: 550px;
+	margin: -300px 0 0 -215px;
+	border: 1px solid #fff;
+	border-radius: 20px;
+	overflow: hidden;
+}
+
+.logo {
+	width: 104px;
+	height: 104px;
+	margin: 30px auto 100px;/*外边距上右下左*/
+	/*background:bg-color bg-image position/bg-size bg-repeat bg-origin bg-clip bg-attachment initial|inherit;*/
+	background: url(../img/logo1.PNG) center  no-repeat;
+}
+
+.form-item {
+	position: relative;/*对象不可层叠，但将依据left，right，top，bottom等属性在正常文档流中偏移位置*/
+	width: 360px;
+	margin: 0 auto;
+	padding-bottom: 30px;
+}
+
+.form-item input {
+	width: 288px;
+	height: 48px;
+	padding-left: 70px;
+	border: 1px solid #fff;
+	/*向 div 元素添加圆角边框：*/
+	border-radius: 25px;
+	font-size: 18px;
+	color: #fff;
+	/*背景透明*/
+	background-color: transparent;
+	outline: none;
+}
+
+.form-item button {
+	width: 360px;
+	height: 50px;
+	border: 0;
+	border-radius: 25px;
+	font-size: 18px;
+	color: #1f6f4a;
+	outline: none;
+	/*光标呈现为指示链接的指针（手）*/
+	cursor: pointer;
+	background-color: #fff;
+}
+
+#username {
+	background: url(../img/user.jpg) 20px 11px no-repeat;
+}
+
+#password {
+	background: url(../img/password.jpg) 23px 11px no-repeat;
+}
+
+.reg-bar {
+	width: 360px;
+	margin: 20px auto 0;
+	font-size: 14px;
+	/*overflow:hidden是当元素内的内容溢出的时候使它隐藏溢出的部分，即超出部分隐藏。*/
+	overflow: hidden;
+}
+
+.reg-bar a {
+	color: #fff;
+	text-decoration: none;
+}
+
+.reg-bar a:hover {
+	text-decoration: underline;
+}
+
+.reg-bar .reg {
+	float: left;
+}
+
+.reg-bar .forget {
+	float: right;
+}
+
+.dowebok ::-webkit-input-placeholder {
+	font-size: 18px;
+	line-height: 1.4;
+	color: #fff;
+}

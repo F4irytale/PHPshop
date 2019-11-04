@@ -1,0 +1,131 @@
+.title img{
+	float: left;
+	width: 100px;
+	height: 60px;
+	margin-left: 80px;
+	
+}
+/*表单组*/
+.main_form{
+	width: 400px;
+	height: 300px;
+	margin-top: 40px;
+	margin-left: 50px;
+	position: relative;
+}
+ul li{
+	margin-left: 30px;
+}
+/*图片设置*/
+.rightimg0{
+	width: 950px;
+	height: 400px;
+	margin-top: 60px;
+	position: absolute;
+}
+.rightimg1{
+	width: 900px;
+	height: 350px;
+	
+	margin-top: 60px;
+	position: absolute;
+	margin-left: 470px;
+}
+.rightimg2{
+	width: 750px;
+	height: 350px;
+	margin-left: 120px;
+	margin-top: 80px;
+	position: absolute;
+}
+.rightimg3{
+	width: 800px;
+	height: 350px;
+	margin-left:50px;
+	margin-top: 80px;
+	position: absolute;
+}
+/*协议项设置*/
+.main_text{
+	width: 400px;
+	height: 520px;
+	float: left;
+	font-size: 14px;
+	margin-left: 50px;
+	margin-top: 30px;
+	padding: 8px;
+	border-top:5px solid red;
+	border-right:1px solid #90a4ae;
+	border-left:1px solid #90a4ae;
+	border-bottom:1px solid #90a4ae;
+	position: relative;
+	/*去除浮动定位*/
+	line-height: 1.5;
+}
+.first_title{
+	font-size: 15px;
+	color: #37474f;
+}
+.text_style{
+	color: #ff1744;
+	font-weight: bold;
+	line-height: 2;
+}
+/*下划线*/
+.text_line{
+	text-decoration: underline;
+	font-weight: bold;
+}
+/*按钮*/
+.main_text button{
+	background-color: #d50000;
+	width: 130px;
+	margin-left: 126px;
+	border:none;
+	margin-top: 11px;
+}
+.main_text .btn:hover{
+	background-color: #ff1744;
+}
+.main_text .btn:active{
+	background-color: #ff1744;
+}
+
+.address_info{
+	width: 400px;
+	height: 500px;
+	margin-top: 40px;
+	margin-left: 50px;
+	/*background-color: blue;*/
+	float: left;
+	position: relative;
+}
+/*注册成功*/
+.success_img{
+	width: 200px;
+	height: 200px;
+	margin-top: 100px;
+	float: left;
+	position: relative;
+
+}
+.alert{
+	margin-top: 170px;
+	width: 300px;
+	font-size: 25px;
+	float: left;
+	position: relative;
+
+}
+/*修改标签鼠标样式*/
+ul li a{
+	cursor:default;
+}
+.input-group-addon{
+	font-size: 21px;
+}
+.sec_form{
+	width: 250px;
+	line-height: 2;
+	margin-left: 40px;
+}
